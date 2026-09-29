@@ -13,9 +13,6 @@ router.get('/', (req, res) => {
     return res.send('hello world');
 });
 
-router.get('/ping', (req, res) => {
-    return res.send('pong');
-});
 
 //Device clock source. Returns { time: <unix_seconds> }.
 router.get('/time', (req, res) => {

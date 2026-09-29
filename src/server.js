@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-//Device contract + system routes: /, /ping, /time, /activity-list, /reset
+//Device contract + system routes: /, /time, /activity-list, /reset
 app.use('/', systemRouter);
 //Frontend CRUD
 app.use('/activities', activitiesRouter);
